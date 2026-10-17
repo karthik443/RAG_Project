@@ -1,0 +1,11 @@
+Query,Failure mode,Gold chunk,Baseline rank,Re-ranked rank,In baseline top-3?,In re-ranked top-3?
+Q1,Exception / corner case,29,7,3,False,True
+Q2,Exception / corner case,19,10,2,False,True
+Q3,Exception / corner case (partial),54,7,4,False,False
+Q4,Negation / constraint,29,6,1,False,True
+Q5,Negation / constraint,60,7,2,False,True
+Q6,Negation / constraint,13,8,2,False,True
+Q7,Keyword trap / synonyms,28,4,1,False,True
+Q8,Other: answer buried at rank 10,62,10,1,False,True
+Q9,Limitation (answer outside top-10),53,>10,>10,False,False
+Q10,Control (easy query),32,1,1,True,True

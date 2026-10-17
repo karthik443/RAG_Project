@@ -1,0 +1,5 @@
+Corpus size (chunks),"FAISS flat search (ms, measured)","Cross-Encoder on all chunks (s, extrapolated)",Cross-Encoder on top-10 only (ms)
+1000,0.09,51.7,516.7
+10000,9.69,516.7,516.7
+100000,9.97,5166.7,516.7
+1000000,113.1,51667.4,516.7

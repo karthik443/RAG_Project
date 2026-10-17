@@ -1,0 +1,6 @@
+Stage,Mean time (ms)
+Pipeline 1: query embedding + FAISS top-10,9.17
+Pipeline 2 extra: Cross-Encoder on 10 pairs,276.17
+Pipeline 2 total retrieval (1 + extra),285.34
+"LLM generation, Answer 1 (top-3)",98800.62
+"LLM generation, Answer 2 (top-3)",109378.32

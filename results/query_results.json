@@ -1,0 +1,604 @@
+[
+ {
+  "qid": "Q1",
+  "mode": "Exception / corner case",
+  "query": "If I buy a victory point card that gets me to 10 points, do I have to wait for my next turn?",
+  "gold": [
+   29
+  ],
+  "base_ids": [
+   32,
+   69,
+   33,
+   39,
+   20,
+   70,
+   29,
+   21,
+   45,
+   7
+  ],
+  "cos": [
+   0.7021268606185913,
+   0.5964744091033936,
+   0.5907095670700073,
+   0.5496739745140076,
+   0.5210610628128052,
+   0.5050256252288818,
+   0.48822280764579773,
+   0.4783886671066284,
+   0.4770180583000183,
+   0.4770180583000183
+  ],
+  "rr_ids": [
+   32,
+   20,
+   29,
+   69,
+   70,
+   33,
+   21,
+   39,
+   45,
+   7
+  ],
+  "ce": [
+   7.6250481605529785,
+   6.464864253997803,
+   5.80046272277832,
+   4.270181179046631,
+   1.75461745262146,
+   0.43231087923049927,
+   -0.07795809209346771,
+   -1.4154932498931885,
+   -3.3320133686065674,
+   -3.3320133686065674
+  ],
+  "base_rank": 7,
+  "ce_rank": 3,
+  "ans1": "No, if you have reached 10 victory points during your own turn, you can claim victory immediately. The passage states \"If you have\u2014or reach\u201410 victory points on your turn, the game ends immediately and you win!\"",
+  "ans2": "No, if you buy a victory point card that brings you to 10 points during your turn, you may immediately reveal this card and win the game. There's no requirement to wait until your next turn."
+ },
+ {
+  "qid": "Q2",
+  "mode": "Exception / corner case",
+  "query": "After I play a progress card, can I play it again later?",
+  "gold": [
+   19
+  ],
+  "base_ids": [
+   29,
+   47,
+   21,
+   32,
+   52,
+   23,
+   34,
+   33,
+   41,
+   19
+  ],
+  "cos": [
+   0.4047955274581909,
+   0.38733533024787903,
+   0.33919909596443176,
+   0.3342396020889282,
+   0.3309042453765869,
+   0.3225419223308563,
+   0.3051672875881195,
+   0.3042043447494507,
+   0.2962350845336914,
+   0.2868437170982361
+  ],
+  "rr_ids": [
+   29,
+   19,
+   47,
+   52,
+   21,
+   41,
+   34,
+   23,
+   32,
+   33
+  ],
+  "ce": [
+   3.574320077896118,
+   0.5404073596000671,
+   -1.043955683708191,
+   -4.499992370605469,
+   -5.127284049987793,
+   -5.539819717407227,
+   -5.811352729797363,
+   -7.116855621337891,
+   -7.968665599822998,
+   -9.641412734985352
+  ],
+  "base_rank": 10,
+  "ce_rank": 2,
+  "ans1": "No, after playing a progress card, you cannot play it again during the same turn. According to Passage 1, you may only play 1 development card per turn, which includes progress cards.",
+  "ans2": "No, after playing a progress card, you cannot play it again. The card is removed from the game once played according to the passage stating \"Once played, knight cards remain face up in front of you. The first player to have 3 knight cards in front of themself receives the special card \u201cLargest Army,\u201d which is worth 2 victory points. If another player has more knight cards in front of them than the current holder of the Largest Army card, they immediately take the special card and its 2 victory points.\" This indicates that once a progress card is played, it is no"
+ },
+ {
+  "qid": "Q3",
+  "mode": "Exception / corner case (partial)",
+  "query": "Do I get any resources if a robber-blocked number is rolled?",
+  "gold": [
+   54
+  ],
+  "base_ids": [
+   17,
+   57,
+   20,
+   36,
+   55,
+   19,
+   54,
+   18,
+   80,
+   61
+  ],
+  "cos": [
+   0.49662458896636963,
+   0.4607761800289154,
+   0.4492296576499939,
+   0.440228134393692,
+   0.42799824476242065,
+   0.3974945545196533,
+   0.3942915201187134,
+   0.38853710889816284,
+   0.32315945625305176,
+   0.3216029107570648
+  ],
+  "rr_ids": [
+   17,
+   55,
+   18,
+   54,
+   57,
+   36,
+   61,
+   19,
+   20,
+   80
+  ],
+  "ce": [
+   5.963186740875244,
+   5.341787338256836,
+   5.319665908813477,
+   2.5661323070526123,
+   2.091510772705078,
+   -0.5723475813865662,
+   -3.773953914642334,
+   -5.355853080749512,
+   -6.395240783691406,
+   -8.265360832214355
+  ],
+  "base_rank": 7,
+  "ce_rank": 4,
+  "ans1": "No, if a robber-blocked number is rolled, no one receives any resources. Instead, players must discard half of their excess resource cards and the robber is moved to block the resource production of the hex. Additionally, the player rolling the \"7\" steals 1 resource card from a neighboring player.",
+  "ans2": "No, if a robber-blocked number is rolled, no one receives any resources. Instead, players must return half of their excess resource cards to the bank and the robber is moved."
+ },
+ {
+  "qid": "Q4",
+  "mode": "Negation / constraint",
+  "query": "Can I play two knight cards in the same turn?",
+  "gold": [
+   29
+  ],
+  "base_ids": [
+   38,
+   37,
+   19,
+   6,
+   72,
+   29,
+   36,
+   23,
+   33,
+   65
+  ],
+  "cos": [
+   0.5387717485427856,
+   0.4508237838745117,
+   0.44145309925079346,
+   0.43025678396224976,
+   0.39330846071243286,
+   0.3765525817871094,
+   0.35994744300842285,
+   0.3184998631477356,
+   0.31315577030181885,
+   0.30903592705726624
+  ],
+  "rr_ids": [
+   29,
+   37,
+   38,
+   6,
+   72,
+   19,
+   65,
+   36,
+   33,
+   23
+  ],
+  "ce": [
+   7.147678375244141,
+   4.6211042404174805,
+   2.394491195678711,
+   2.003124713897705,
+   1.9985239505767822,
+   1.7611820697784424,
+   -0.02589545026421547,
+   -1.0414178371429443,
+   -6.4190850257873535,
+   -7.913896083831787
+  ],
+  "base_rank": 6,
+  "ce_rank": 1,
+  "ans1": "No, you can only play one knight card per turn according to Passage 1 and Passage 2. After playing a knight card, you must immediately move the robber, and then the card remains face up in front of you. Playing more than one knight card in a single turn is not allowed.",
+  "ans2": "No, you can only play one knight card per turn. If you play three knight cards, you get a special card worth 2 victory points. Playing additional knight cards beyond the first does not allow you to play another knight card in the same turn."
+ },
+ {
+  "qid": "Q5",
+  "mode": "Negation / constraint",
+  "query": "Can I build a sixth settlement if I already have five on the board?",
+  "gold": [
+   60
+  ],
+  "base_ids": [
+   25,
+   23,
+   30,
+   61,
+   79,
+   67,
+   60,
+   58,
+   15,
+   27
+  ],
+  "cos": [
+   0.6047130823135376,
+   0.5523216128349304,
+   0.5480473041534424,
+   0.5265157222747803,
+   0.5167560577392578,
+   0.5085023641586304,
+   0.5006148219108582,
+   0.49895718693733215,
+   0.484828919172287,
+   0.4814653694629669
+  ],
+  "rr_ids": [
+   25,
+   60,
+   23,
+   79,
+   30,
+   61,
+   67,
+   27,
+   15,
+   58
+  ],
+  "ce": [
+   0.4781586527824402,
+   0.38129615783691406,
+   0.3337535858154297,
+   -1.0732507705688477,
+   -1.538010835647583,
+   -2.110623836517334,
+   -4.720105171203613,
+   -5.037395477294922,
+   -6.078994274139404,
+   -6.616650104522705
+  ],
+  "base_rank": 7,
+  "ce_rank": 2,
+  "ans1": "No, you cannot build a sixth settlement if you already have five on the board according to the passage. The passage states that when you build a city, the upgraded settlement piece becomes available again, but you can only have a maximum of 5 settlements available. Therefore, you would need to upgrade one of your existing settlements to a city to make room for a new settlement.",
+  "ans2": "No, you cannot build a sixth settlement if you already have five on the board. According to the passage, if you have built all 5 of your settlements, you must upgrade 1 of your settlements to a city before you can build another settlement."
+ },
+ {
+  "qid": "Q6",
+  "mode": "Negation / constraint",
+  "query": "Can I place more than one road on the same path?",
+  "gold": [
+   13,
+   53
+  ],
+  "base_ids": [
+   47,
+   62,
+   39,
+   14,
+   40,
+   41,
+   23,
+   13,
+   53,
+   60
+  ],
+  "cos": [
+   0.5525434017181396,
+   0.5430675148963928,
+   0.5224175453186035,
+   0.5190651416778564,
+   0.4491431713104248,
+   0.43056467175483704,
+   0.42920368909835815,
+   0.3934232294559479,
+   0.3905317485332489,
+   0.3890436291694641
+  ],
+  "rr_ids": [
+   47,
+   13,
+   53,
+   62,
+   41,
+   39,
+   14,
+   40,
+   60,
+   23
+  ],
+  "ce": [
+   2.933946132659912,
+   -2.1833457946777344,
+   -2.807328701019287,
+   -3.1004579067230225,
+   -4.609785079956055,
+   -4.74781608581543,
+   -4.982172966003418,
+   -5.8125739097595215,
+   -8.221511840820312,
+   -10.040403366088867
+  ],
+  "base_rank": 8,
+  "ce_rank": 2,
+  "ans1": "No, according to Passage 1, only one road Y can be built on any path.",
+  "ans2": "No, you can only place one road on any given path. This rule is stated directly in Passage 2 as \"Only 1 road can be built on any given path Y.\""
+ },
+ {
+  "qid": "Q7",
+  "mode": "Keyword trap / synonyms",
+  "query": "Which hex never produces anything for anybody?",
+  "gold": [
+   28
+  ],
+  "base_ids": [
+   46,
+   49,
+   50,
+   28,
+   26,
+   80,
+   81,
+   78,
+   10,
+   18
+  ],
+  "cos": [
+   0.3485148549079895,
+   0.339652955532074,
+   0.306094765663147,
+   0.3050222098827362,
+   0.2925548553466797,
+   0.28733164072036743,
+   0.27141690254211426,
+   0.23468321561813354,
+   0.2322787642478943,
+   0.213194340467453
+  ],
+  "rr_ids": [
+   28,
+   81,
+   49,
+   46,
+   78,
+   50,
+   10,
+   80,
+   18,
+   26
+  ],
+  "ce": [
+   1.2242590188980103,
+   1.0465061664581299,
+   -1.2551295757293701,
+   -1.417017936706543,
+   -1.7512948513031006,
+   -1.930720567703247,
+   -2.6597037315368652,
+   -2.9915518760681152,
+   -4.143568515777588,
+   -7.625375747680664
+  ],
+  "base_rank": 4,
+  "ce_rank": 1,
+  "ans1": "The hex marked with \"7\" never produces anything for anybody as it is mentioned that there is no \"7\" number token.",
+  "ans2": "The desert hex never produces anything for anybody."
+ },
+ {
+  "qid": "Q8",
+  "mode": "Other: answer buried at rank 10",
+  "query": "Who gets starting resources and from which settlement?",
+  "gold": [
+   62,
+   63
+  ],
+  "base_ids": [
+   67,
+   10,
+   78,
+   27,
+   16,
+   49,
+   15,
+   30,
+   5,
+   63
+  ],
+  "cos": [
+   0.5686866044998169,
+   0.5651284456253052,
+   0.5550836324691772,
+   0.5416567325592041,
+   0.4966478943824768,
+   0.496555894613266,
+   0.48802173137664795,
+   0.4628698229789734,
+   0.4606178104877472,
+   0.45521074533462524
+  ],
+  "rr_ids": [
+   63,
+   5,
+   67,
+   10,
+   78,
+   16,
+   15,
+   49,
+   27,
+   30
+  ],
+  "ce": [
+   4.922425270080566,
+   2.81376314163208,
+   2.715794086456299,
+   0.9371089339256287,
+   -0.16052813827991486,
+   -0.8858327865600586,
+   -1.930647373199463,
+   -2.175905227661133,
+   -2.8455893993377686,
+   -3.104121208190918
+  ],
+  "base_rank": 10,
+  "ce_rank": 1,
+  "ans1": "Starting resources are received by players who have settlements on intersections that border terrain hexes matching the number rolled on the dice. Specifically, a player with a settlement on an intersection Y that borders a forest or hills hex receives brick or lumber resources respectively. This information is derived directly from Passage 1.",
+  "ans2": "Players receive their starting resources immediately after building their second settlement. They take a corresponding resource card from the supply for each terrain hex adjacent to this second settlement."
+ },
+ {
+  "qid": "Q9",
+  "mode": "Limitation (answer outside top-10)",
+  "query": "Do roads count toward my score?",
+  "gold": [
+   53
+  ],
+  "base_ids": [
+   39,
+   14,
+   40,
+   47,
+   45,
+   7,
+   33,
+   32,
+   41,
+   62
+  ],
+  "cos": [
+   0.5560052394866943,
+   0.4985061287879944,
+   0.44959619641304016,
+   0.4117521047592163,
+   0.399602472782135,
+   0.399602472782135,
+   0.3967230021953583,
+   0.3917463719844818,
+   0.3748188614845276,
+   0.36033421754837036
+  ],
+  "rr_ids": [
+   39,
+   40,
+   14,
+   32,
+   7,
+   45,
+   41,
+   33,
+   62,
+   47
+  ],
+  "ce": [
+   -2.9629836082458496,
+   -7.254048824310303,
+   -7.779034614562988,
+   -9.27005672454834,
+   -9.41435718536377,
+   -9.41435718536377,
+   -9.781444549560547,
+   -9.884882926940918,
+   -10.664941787719727,
+   -10.725500106811523
+  ],
+  "base_rank": null,
+  "ce_rank": null,
+  "ans1": "Yes, roads count toward your score. According to Passage 1, if you build a continuous road of at least 5 individual road pieces, you receive a special card worth 2 victory points. Additionally, the \"Longest Road\" card, which is awarded to the first player to build such a road, also grants 2 additional victory points.",
+  "ans2": "Yes, roads count toward your score. According to the passage, if you are the first player to build a continuous road of at least 5 individual road pieces, you receive a special card worth 2 victory points. Additionally, if you hold the \"Longest Road\" card and another player builds a longer road, you lose the card but gain 2 additional victory points, creating a 4-point swing."
+ },
+ {
+  "qid": "Q10",
+  "mode": "Control (easy query)",
+  "query": "Can a player win the game during an opponent's turn?",
+  "gold": [
+   32
+  ],
+  "base_ids": [
+   32,
+   20,
+   33,
+   70,
+   53,
+   31,
+   37,
+   38,
+   18,
+   21
+  ],
+  "cos": [
+   0.4777350425720215,
+   0.36670345067977905,
+   0.3618483543395996,
+   0.34596896171569824,
+   0.31836411356925964,
+   0.31543272733688354,
+   0.31370553374290466,
+   0.30220696330070496,
+   0.2951304614543915,
+   0.2848166227340698
+  ],
+  "rr_ids": [
+   32,
+   20,
+   70,
+   18,
+   53,
+   21,
+   37,
+   33,
+   31,
+   38
+  ],
+  "ce": [
+   8.067621231079102,
+   5.161962509155273,
+   3.4555530548095703,
+   2.329659938812256,
+   -1.223144292831421,
+   -2.598050117492676,
+   -2.9708142280578613,
+   -3.0019149780273438,
+   -4.0947113037109375,
+   -5.5590057373046875
+  ],
+  "base_rank": 1,
+  "ce_rank": 1,
+  "ans1": "No, a player cannot win the game during an opponent's turn. According to the passage, a player must wait until their own turn to claim victory if they reach 10 victory points.",
+  "ans2": "No, a player cannot win the game during an opponent's turn. According to the passage, a player can only claim victory during their own turn, and they must wait until their next turn if they reach 10 victory points during another player's turn."
+ }
+]
