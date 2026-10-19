@@ -1,5 +1,7 @@
 # RAG Assignment: Baseline Retrieval vs. Cross-Encoder Re-Ranking
 
+Report: [`report.pdf`](report.pdf) (LaTeX source: `report.tex`).
+
 Single notebook: [`RAG_Baseline_vs_Reranking.ipynb`](RAG_Baseline_vs_Reranking.ipynb) (outputs included).
 
 - **Document:** *CATAN Game Rules & Almanac* (`data/catan_rules.pdf`, 16 pages)
